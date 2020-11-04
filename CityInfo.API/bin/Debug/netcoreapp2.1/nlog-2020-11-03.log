@@ -1,0 +1,45 @@
+2020-11-03 21:16:10.6769|INFO|CityInfo.API.Program|Initializing application...
+2020-11-03 21:16:11.8741|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-03 21:16:12.3567|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-03 21:16:12.5376|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-03 21:16:12.5376|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-03 21:16:12.5557|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40ARB5ACPT", Request id "0HM40ARB5ACPT:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:16:12.5557|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.7464ms 500 
+2020-11-03 21:16:12.5622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.9131ms 500 text/html; charset=utf-8
+2020-11-03 21:16:40.0398|INFO|CityInfo.API.Program|Initializing application...
+2020-11-03 21:16:41.1944|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-03 21:16:41.5475|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-03 21:16:41.8368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-03 21:16:41.8368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-03 21:16:41.8578|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40ARJSE67N", Request id "0HM40ARJSE67N:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:16:41.8636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.8606ms 500 
+2020-11-03 21:16:41.8636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.621ms 500 text/html; charset=utf-8
+2020-11-03 21:20:27.3834|INFO|CityInfo.API.Program|Initializing application...
+2020-11-03 21:20:28.5515|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-03 21:20:28.9004|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-03 21:20:29.1195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-03 21:20:29.1195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-03 21:20:29.1396|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40ATNK70JS", Request id "0HM40ATNK70JS:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:20:29.1396|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.1568ms 500 text/html; charset=utf-8
+2020-11-03 21:20:29.1396|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40ATNK70JR", Request id "0HM40ATNK70JR:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:20:29.1563|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.0098ms 500 
+2020-11-03 21:20:37.9114|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:1028/api/cities/1/pointsofinterest/1  
+2020-11-03 21:20:37.9114|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.399ms 500 text/html; charset=utf-8
+2020-11-03 21:38:46.8198|INFO|CityInfo.API.Program|Initializing application...
+2020-11-03 21:38:47.9416|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-03 21:38:48.3442|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-03 21:38:48.6097|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-03 21:38:48.6097|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-03 21:38:48.6367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.7895ms 500 text/html; charset=utf-8
+2020-11-03 21:38:48.6421|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40B7V9IUVM", Request id "0HM40B7V9IUVM:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:38:48.6421|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.5571ms 500 
+2020-11-03 21:41:09.7218|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:1028/api/cities/1/pointsofinterest/1  
+2020-11-03 21:41:09.7218|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.2496ms 500 text/html; charset=utf-8
+2020-11-03 21:42:55.6023|INFO|CityInfo.API.Program|Initializing application...
+2020-11-03 21:42:56.7833|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-03 21:42:57.2236|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-03 21:42:57.5401|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-03 21:42:57.5401|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-03 21:42:57.5677|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40BA9FHLHU", Request id "0HM40BA9FHLHU:00000001": An unhandled exception was thrown by the application.
+2020-11-03 21:42:57.5677|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.4153ms 500 
+2020-11-03 21:42:57.5677|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.0659ms 500 text/html; charset=utf-8

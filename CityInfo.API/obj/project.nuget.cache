@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "POZceYmhWuBG5TbXj8xrWshd9l8c+Qi/Vx1k4JkG5hpIFRSMZIj2PouV0E6IyFTJE+RnXSyYEjQDhAFh/832tg==",
+  "dgSpecHash": "R9ottFAAnq0sEtYt7i99NafAtToAZ7MRM1eHY2GkeiyILIn8j262oTA9Xkalu1wHbFRyL9EI55f2VoMHRK8nTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\i.albuquerque.soares\\source\\repos\\_Personal\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
@@ -172,6 +172,9 @@
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
+    "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\nlog\\4.7.2\\nlog.4.7.2.nupkg.sha512",
+    "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\nlog.extensions.logging\\1.6.4\\nlog.extensions.logging.1.6.4.nupkg.sha512",
+    "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\nlog.web.aspnetcore\\4.9.3\\nlog.web.aspnetcore.4.9.3.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

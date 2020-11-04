@@ -7,10 +7,13 @@ C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\bin\D
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.csprojAssemblyReference.cache
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.AssemblyInfoInputs.cache
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.AssemblyInfo.cs
-C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.csproj.CoreCompileInputs.cache
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.RazorAssemblyInfo.cache
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.RazorAssemblyInfo.cs
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.RazorTargetAssemblyInfo.cache
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.dll
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.pdb
 C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.genruntimeconfig.cache
+C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\bin\Debug\netcoreapp2.1\nlog.config
+C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\obj\Debug\netcoreapp2.1\CityInfo.API.csproj.CoreCompileInputs.cache
+C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\i.albuquerque.soares\source\repos\_Personal\CityInfo\CityInfo.API\bin\Debug\netcoreapp2.1\appsettings.Production.json
