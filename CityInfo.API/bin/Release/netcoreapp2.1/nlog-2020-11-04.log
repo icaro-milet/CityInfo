@@ -1,0 +1,15 @@
+2020-11-04 14:18:55.9669|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:18:57.4490|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:18:58.0160|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:18:58.4119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:18:58.4119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:18:58.4515|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SMRJ8P0E", Request id "0HM40SMRJ8P0E:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:18:58.4566|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.6257ms 500 text/html; charset=utf-8
+2020-11-04 14:18:58.4566|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.4332ms 500 
+2020-11-04 14:19:38.3225|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:19:38.6878|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:19:38.8444|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:19:39.2063|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:19:39.2207|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14.6199ms 500 text/html; charset=utf-8
+2020-11-04 14:20:02.0985|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:20:02.1169|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.8623ms 500 text/html; charset=utf-8

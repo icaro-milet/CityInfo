@@ -1,0 +1,307 @@
+2020-11-04 13:26:06.3097|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 13:26:08.1487|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 13:26:08.6365|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 13:26:09.1153|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 13:26:09.1153|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 13:26:09.1347|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40RPB2R8H1", Request id "0HM40RPB2R8H1:00000001": An unhandled exception was thrown by the application.
+2020-11-04 13:26:09.1414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.8487ms 500 
+2020-11-04 13:26:09.1414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.5988ms 500 text/html; charset=utf-8
+2020-11-04 13:26:25.0145|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 13:26:25.0278|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.2605ms 500 text/html; charset=utf-8
+2020-11-04 13:27:21.3703|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 13:27:22.8762|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 13:27:23.4136|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 13:27:23.7244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 13:27:23.7244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 13:27:23.7529|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40RQ1AFSNP", Request id "0HM40RQ1AFSNP:00000001": An unhandled exception was thrown by the application.
+2020-11-04 13:27:23.7529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.3436ms 500 text/html; charset=utf-8
+2020-11-04 13:27:23.7529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.3872ms 500 
+2020-11-04 13:27:29.8513|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 13:27:29.8513|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.0881ms 500 text/html; charset=utf-8
+2020-11-04 13:29:32.3230|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 13:29:33.7627|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 13:29:34.3021|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 13:29:34.3021|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 13:29:34.3666|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.6913ms 200 
+2020-11-04 13:29:34.5310|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 230.8828ms 404 text/plain
+2020-11-04 13:29:40.4955|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 13:29:40.5479|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 13:29:41.0285|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 13:29:53.1004|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (418ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CityInfoDB];
+2020-11-04 13:29:53.1992|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (95ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CityInfoDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2020-11-04 13:29:53.3110|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+2020-11-04 13:29:53.3202|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointOfInterestDto] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    [Description] nvarchar(max) NULL,
+    [CityId] int NULL,
+    CONSTRAINT [PK_PointOfInterestDto] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointOfInterestDto_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]) ON DELETE NO ACTION
+);
+2020-11-04 13:29:53.3202|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [PointsOfInterest] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [CityId] int NOT NULL,
+    CONSTRAINT [PK_PointsOfInterest] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_PointsOfInterest_Cities_CityId] FOREIGN KEY ([CityId]) REFERENCES [Cities] ([Id]) ON DELETE CASCADE
+);
+2020-11-04 13:29:53.3329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointOfInterestDto_CityId] ON [PointOfInterestDto] ([CityId]);
+2020-11-04 13:29:53.3329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_PointsOfInterest_CityId] ON [PointsOfInterest] ([CityId]);
+2020-11-04 13:29:53.3515|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 13:29:53.3515|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.4435ms.
+2020-11-04 13:29:53.3711|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 13:29:53.3800|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 12824.1666ms
+2020-11-04 13:29:53.4860|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12894.6469ms 200 
+2020-11-04 13:32:08.1341|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 13:32:09.3988|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 13:32:09.9614|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 13:32:10.1851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 13:32:10.1851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 13:32:10.2060|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40RSMMI956", Request id "0HM40RSMMI956:00000001": An unhandled exception was thrown by the application.
+2020-11-04 13:32:10.2060|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.9475ms 500 
+2020-11-04 13:32:10.2060|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.4432ms 500 text/html; charset=utf-8
+2020-11-04 13:55:40.9412|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 13:55:42.7145|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 13:56:56.6986|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 13:56:57.1410|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 13:56:57.1410|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 13:56:57.1682|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SAHR933A", Request id "0HM40SAHR933A:00000001": An unhandled exception was thrown by the application.
+2020-11-04 13:56:57.1770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.6127ms 500 
+2020-11-04 13:56:57.1770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.0201ms 500 text/html; charset=utf-8
+2020-11-04 13:57:20.7718|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 13:57:20.7808|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.6142ms 500 text/html; charset=utf-8
+2020-11-04 14:00:38.5178|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:00:40.4566|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:01:20.2202|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:01:20.6099|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:01:20.6099|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:01:20.6732|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 39.1998ms 500 text/html; charset=utf-8
+2020-11-04 14:01:20.6732|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SD0BFEC7", Request id "0HM40SD0BFEC7:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:01:20.6885|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.7897ms 500 text/html; charset=utf-8
+2020-11-04 14:01:32.0763|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:01:32.0833|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.948ms 500 text/html; charset=utf-8
+2020-11-04 14:07:38.6206|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:07:40.3985|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:10:48.7540|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:10:50.9250|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:10:58.7805|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:10:59.2540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:10:59.2540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:10:59.2540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:10:59.2540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:10:59.2932|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SICPP14A", Request id "0HM40SICPP14A:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:10:59.2932|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SICPP14C", Request id "0HM40SICPP14C:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:10:59.2985|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SICPP14B", Request id "0HM40SICPP14B:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:10:59.2985|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 55.7971ms 500 text/html; charset=utf-8
+2020-11-04 14:10:59.2985|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SICPP14D", Request id "0HM40SICPP14D:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:10:59.3163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65.4795ms 500 
+2020-11-04 14:10:59.3163|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.3061ms 500 
+2020-11-04 14:10:59.3350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.1151ms 500 
+2020-11-04 14:11:19.2070|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:11:19.2312|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.9453ms 500 text/html; charset=utf-8
+2020-11-04 14:13:12.5326|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:13:17.3678|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:13:23.9415|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:13:24.4283|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:13:24.4283|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:13:24.4619|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SJO2DSV2", Request id "0HM40SJO2DSV2:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:13:24.4619|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SJO2DSV1", Request id "0HM40SJO2DSV1:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:13:24.4910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 67.8745ms 500 
+2020-11-04 14:13:24.4910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.282ms 500 
+2020-11-04 14:13:30.8469|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:13:30.8769|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 38.4588ms 500 text/html; charset=utf-8
+2020-11-04 14:16:59.1026|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:17:01.7457|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:17:09.1041|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:17:09.7390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:17:09.7390|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:17:09.7681|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40SLR6IO11", Request id "0HM40SLR6IO11:00000001": An unhandled exception was thrown by the application.
+2020-11-04 14:17:09.7681|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.7689ms 500 text/html; charset=utf-8
+2020-11-04 14:17:09.7842|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.6888ms 500 
+2020-11-04 14:20:50.7026|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:20:55.9304|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:20:56.6622|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:20:56.9560|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 14:20:57.4654|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:20:57.4832|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 18.5396ms 500 text/html; charset=utf-8
+2020-11-04 14:21:32.9105|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:21:35.6006|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:21:43.4990|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:21:43.4991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:21:43.5889|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.084ms 200 
+2020-11-04 14:21:43.9448|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 439.1882ms 404 text/plain
+2020-11-04 14:21:54.3017|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:21:54.3564|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 14:21:54.9353|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 14:21:56.4567|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (108ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 14:21:56.4814|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 14:21:56.4989|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.5916ms.
+2020-11-04 14:21:56.5658|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 14:21:56.5814|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 2215.5858ms
+2020-11-04 14:21:56.6003|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2301.6276ms 200 
+2020-11-04 14:22:47.8455|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:22:49.7661|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:22:53.5155|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:22:53.5155|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:22:53.5812|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.2559ms 200 
+2020-11-04 14:22:53.8258|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 289.4079ms 404 text/plain
+2020-11-04 14:23:02.3993|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:23:02.4806|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 14:23:02.9742|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 14:23:04.6603|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 14:23:04.6734|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 14:45:08.4301|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 14:45:09.7975|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 14:45:27.9358|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 14:45:27.9358|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 14:45:27.9887|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.3639ms 200 
+2020-11-04 14:45:28.2067|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 273.466ms 404 text/plain
+2020-11-04 14:45:33.1495|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 14:45:33.2012|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 14:45:33.5421|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 14:45:34.8194|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 14:45:34.8316|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 14:45:34.8316|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.531ms.
+2020-11-04 14:45:34.8540|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 14:45:34.8642|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 1654.2819ms
+2020-11-04 14:45:34.8642|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1722.8188ms 200 
+2020-11-04 15:37:20.8824|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 15:37:22.4022|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 15:37:22.8007|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 15:37:23.2983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 15:37:23.2983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 15:37:23.3961|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40U2LP1N1O", Request id "0HM40U2LP1N1O:00000001": An unhandled exception was thrown by the application.
+2020-11-04 15:37:23.3961|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 103.5187ms 500 text/html; charset=utf-8
+2020-11-04 15:37:23.3961|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.3276ms 500 
+2020-11-04 15:38:30.2488|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 15:38:31.6223|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 15:38:32.3731|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 15:38:32.3731|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 15:38:32.4423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.6484ms 200 
+2020-11-04 15:38:32.6746|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 303.4697ms 404 text/plain
+2020-11-04 15:38:36.9902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 15:38:37.0367|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 15:38:37.3325|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 15:38:37.4769|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 15:38:37.4873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 15:38:37.4873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.4621ms.
+2020-11-04 15:38:37.5045|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 15:38:37.5045|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 468.527ms
+2020-11-04 15:38:37.5187|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 536.3535ms 200 
+2020-11-04 15:46:06.6724|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 15:46:25.6758|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 15:46:26.0743|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 15:46:26.3193|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 15:46:26.3193|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 15:46:26.3434|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.2143ms 500 text/html; charset=utf-8
+2020-11-04 15:46:26.3434|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.2141ms 500 text/html; charset=utf-8
+2020-11-04 15:49:16.7765|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 15:49:18.0017|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 15:49:18.4282|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 15:49:18.6865|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 15:49:18.6865|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 15:49:18.7822|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM40U9AVLUCV", Request id "0HM40U9AVLUCV:00000001": An unhandled exception was thrown by the application.
+2020-11-04 15:49:18.7822|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.9008ms 500 
+2020-11-04 15:49:18.7822|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.5787ms 500 text/html; charset=utf-8
+2020-11-04 15:49:25.0115|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 15:49:25.0166|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.3182ms 500 text/html; charset=utf-8
+2020-11-04 15:51:11.8902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 15:51:11.8902|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.0796ms 500 text/html; charset=utf-8
+2020-11-04 16:05:04.3866|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 16:06:43.1213|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 16:06:43.8214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 16:06:43.8214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 16:06:43.8783|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.7784ms 200 
+2020-11-04 16:06:44.0207|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 202.6747ms 404 text/plain
+2020-11-04 16:06:56.7470|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 16:06:56.7838|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "TestDatabase", controller = "Dummy"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestDatabase() on controller CityInfo.API.Controllers.DummyController (CityInfo.API).
+2020-11-04 16:07:06.9055|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 16:07:08.1091|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 16:07:08.1091|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) - Validation state: Valid
+2020-11-04 16:07:08.1275|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API), returned result Microsoft.AspNetCore.Mvc.OkResult in 0.4541ms.
+2020-11-04 16:07:08.1404|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200
+2020-11-04 16:07:08.1404|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action CityInfo.API.Controllers.DummyController.TestDatabase (CityInfo.API) in 11357.5324ms
+2020-11-04 16:07:08.1568|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11409.8876ms 200 
+2020-11-04 17:14:17.8756|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 17:14:19.2268|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2020-11-04 17:21:14.9418|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-04 17:21:16.1392|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-11-04 17:21:16.2094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2020-11-04 17:21:16.2094|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2020-11-04 17:21:16.2198|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2020-11-04 17:21:16.2198|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20201104201419_CityInfoDBInitialMigration'.
+2020-11-04 17:21:16.2637|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Cities] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(50) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    CONSTRAINT [PK_Cities] PRIMARY KEY ([Id])
+);
+2020-11-04 19:53:11.5722|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 20:13:18.1197|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 20:13:32.4808|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 20:13:32.8962|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 20:13:33.0770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 20:13:33.0770|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 20:13:33.0786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 20:13:33.0786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 20:13:33.2706|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM412SVURJB3", Request id "0HM412SVURJB3:00000001": An unhandled exception was thrown by the application.
+2020-11-04 20:13:33.2706|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM412SVURJB5", Request id "0HM412SVURJB5:00000001": An unhandled exception was thrown by the application.
+2020-11-04 20:13:33.2816|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM412SVURJB2", Request id "0HM412SVURJB2:00000001": An unhandled exception was thrown by the application.
+2020-11-04 20:13:33.2816|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 203.6205ms 500 text/html; charset=utf-8
+2020-11-04 20:13:33.2816|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 214.2292ms 500 
+2020-11-04 20:13:33.2706|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 195.9956ms 500 
+2020-11-04 20:13:33.2816|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 216.663ms 500 
+2020-11-04 20:13:47.0227|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 20:13:47.0347|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.9272ms 500 text/html; charset=utf-8
+2020-11-04 20:14:43.8284|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 20:15:38.3215|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 20:15:38.7245|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 20:15:39.1353|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 20:15:39.1353|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 20:15:39.2427|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM412U5H1JLE", Request id "0HM412U5H1JLE:00000001": An unhandled exception was thrown by the application.
+2020-11-04 20:15:39.2507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.5738ms 500 
+2020-11-04 20:15:39.2694|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 130.4972ms 500 text/html; charset=utf-8
+2020-11-04 20:21:52.8433|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 20:21:52.8433|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14.5403ms 500 text/html; charset=utf-8
+2020-11-04 20:26:17.5847|INFO|CityInfo.API.Program|Initializing application...
+2020-11-04 20:26:41.4500|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-04 20:26:41.8786|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-04 20:26:42.1711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-04 20:26:42.1711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-04 20:26:42.2652|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM4134B4BA85", Request id "0HM4134B4BA85:00000001": An unhandled exception was thrown by the application.
+2020-11-04 20:26:42.2652|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.6262ms 500 
+2020-11-04 20:26:42.2652|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 101.2881ms 500 text/html; charset=utf-8
+2020-11-04 20:27:03.2198|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/api/testdatabase  
+2020-11-04 20:27:03.2198|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.9493ms 500 text/html; charset=utf-8

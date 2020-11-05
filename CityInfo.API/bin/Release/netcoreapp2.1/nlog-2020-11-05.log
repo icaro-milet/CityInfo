@@ -1,0 +1,70 @@
+2020-11-05 11:30:05.1327|INFO|CityInfo.API.Program|Initializing application...
+2020-11-05 11:30:07.1771|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-05 11:30:07.5108|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (86ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [master] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2020-11-05 11:30:07.5452|ERROR|CityInfo.API.Program|An error ocurred while migrating the database.
+2020-11-05 11:30:07.7114|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 11:30:07.9881|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-05 11:30:08.2802|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-05 11:30:08.2802|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-05 11:30:08.3043|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.8853ms 500 
+2020-11-05 11:30:08.3043|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.2333ms 500 text/html; charset=utf-8
+2020-11-05 11:30:08.6637|WARN|Microsoft.AspNetCore.Server.Kestrel|Connection processing ended abnormally.
+2020-11-05 11:33:56.2926|INFO|CityInfo.API.Program|Initializing application...
+2020-11-05 11:33:58.7273|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-05 11:33:59.0508|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [master] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2020-11-05 11:33:59.0796|ERROR|CityInfo.API.Program|An error ocurred while migrating the database.
+2020-11-05 11:33:59.1587|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 11:33:59.4510|FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception
+2020-11-05 11:33:59.7129|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-05 11:33:59.7129|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-05 11:33:59.8204|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM41IVAP7B2J", Request id "0HM41IVAP7B2J:00000001": An unhandled exception was thrown by the application.
+2020-11-05 11:33:59.8204|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 118.0336ms 500 text/html; charset=utf-8
+2020-11-05 11:33:59.9010|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HM41IVAP7B2I", Request id "0HM41IVAP7B2I:00000001": An unhandled exception was thrown by the application.
+2020-11-05 11:33:59.9063|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 200.2621ms 500 
+2020-11-05 11:39:30.4000|INFO|CityInfo.API.Program|Initializing application...
+2020-11-05 11:39:32.2089|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-05 11:39:32.6667|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (149ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [master] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2020-11-05 11:39:32.6928|ERROR|CityInfo.API.Program|An error ocurred while migrating the database.
+2020-11-05 11:39:32.7778|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 11:39:33.3414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-05 11:39:33.3414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-05 11:39:33.3988|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.1314ms 200 
+2020-11-05 11:39:33.5378|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 200.7143ms 404 text/plain
+2020-11-05 11:40:08.5986|INFO|CityInfo.API.Program|Initializing application...
+2020-11-05 11:40:09.9975|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-05 11:40:10.4101|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (80ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [master] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2020-11-05 11:40:10.4434|ERROR|CityInfo.API.Program|An error ocurred while migrating the database.
+2020-11-05 11:40:10.5808|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 11:40:11.2423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-05 11:40:11.2423|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-05 11:40:11.2888|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.9388ms 200 
+2020-11-05 11:40:11.4270|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 187.7007ms 404 text/plain
+2020-11-05 11:42:21.1866|INFO|CityInfo.API.Program|Initializing application...
+2020-11-05 11:42:22.7763|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.1.14-servicing-32113 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-11-05 11:42:23.1698|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [master] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2020-11-05 11:42:23.1982|ERROR|CityInfo.API.Program|An error ocurred while migrating the database.
+2020-11-05 11:42:23.2934|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\i.albuquerque.soares\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-11-05 11:42:23.8490|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:1028/  
+2020-11-05 11:42:23.8490|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DEBUG http://localhost:1028/  0
+2020-11-05 11:42:23.8948|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.2815ms 200 
+2020-11-05 11:42:24.0396|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 193.2267ms 404 text/plain
