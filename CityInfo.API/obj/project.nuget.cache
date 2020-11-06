@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "R9ottFAAnq0sEtYt7i99NafAtToAZ7MRM1eHY2GkeiyILIn8j262oTA9Xkalu1wHbFRyL9EI55f2VoMHRK8nTA==",
+  "dgSpecHash": "Sh6TG0AO+21iVA9L/ijMW7+lKLOGju/KnWGwcfxARugpIbvDsaf5QlImJzBMNPVxf4ufxQ0x022GO49gf2/A6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\i.albuquerque.soares\\source\\repos\\_Personal\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
+    "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Users\\i.albuquerque.soares\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",
